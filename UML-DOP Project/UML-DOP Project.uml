@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:umlvmprofile="pathmap://UML_PROFILES/uml-vm-profile.profile.uml" xsi:schemaLocation="pathmap://UML_PROFILES/uml-vm-profile.profile.uml pathmap://model/uml-vm-profile/uml-vm-profile.profile.uml#_-5XC0I-gEe-JbtsgPnxLSg">
+  <uml:Model xmi:id="_ud6AUCCYEfCGrZHZMGtCtA" name="UML-DOP Project">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_ujAiwCCYEfCGrZHZMGtCtA">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_zxn8sCCYEfCGrZHZMGtCtA" name="TicketingSystem">
+      <packagedElement xmi:type="uml:Package" xmi:id="_jMhWMCCZEfCGrZHZMGtCtA" name="DCheckout">
+        <packagedElement xmi:type="uml:Class" xmi:id="_oYINgCCbEfCGrZHZMGtCtA" name="SalesProcessImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_ha9fsCCeEfCGrZHZMGtCtA" name="totalAmount">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_sJRnECCfEfCGrZHZMGtCtA" name="salesprocessimpl" type="_ggc8ECCaEfCGrZHZMGtCtA" association="_sJHPACCfEfCGrZHZMGtCtA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sJRnESCfEfCGrZHZMGtCtA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sJRnEiCfEfCGrZHZMGtCtA" value="1"/>
+          </ownedAttribute>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_SBOgICCfEfCGrZHZMGtCtA" name="calculateTotal"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_SY6AUCCfEfCGrZHZMGtCtA" name="applyDiscount"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_gDtjcCCfEfCGrZHZMGtCtA" name="checkout"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_jAtHwCCZEfCGrZHZMGtCtA" name="MSalesProcess">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_AnjQ0CCaEfCGrZHZMGtCtA" name="SalesProcess"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_ggc8ECCaEfCGrZHZMGtCtA" name="SalesProcessImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_qMKPkCCeEfCGrZHZMGtCtA" name="status">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_KXM7ECCcEfCGrZHZMGtCtA" client="_ggc8ECCaEfCGrZHZMGtCtA" supplier="_AnjQ0CCaEfCGrZHZMGtCtA" contract="_AnjQ0CCaEfCGrZHZMGtCtA"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_2mC9YCCeEfCGrZHZMGtCtA" name="process"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_tofl0CCZEfCGrZHZMGtCtA" name="DPaymentMethod">
+        <packagedElement xmi:type="uml:Class" xmi:id="_xsRSYCCbEfCGrZHZMGtCtA" name="SalesProcessImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_wtaoACCcEfCGrZHZMGtCtA" name="methodType">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_3BQkoCCcEfCGrZHZMGtCtA" name="methodDescription">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_tkiEIiCfEfCGrZHZMGtCtA" name="salesprocessimpl" type="_oYINgCCbEfCGrZHZMGtCtA" association="_tkg2ACCfEfCGrZHZMGtCtA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tkiEIyCfEfCGrZHZMGtCtA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tkiEJCCfEfCGrZHZMGtCtA" value="1"/>
+          </ownedAttribute>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_iOvQkCCfEfCGrZHZMGtCtA" name="checkout"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_sJHPACCfEfCGrZHZMGtCtA" memberEnd="_sJRnECCfEfCGrZHZMGtCtA _sJRnEyCfEfCGrZHZMGtCtA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sJQY8CCfEfCGrZHZMGtCtA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_sJQY8SCfEfCGrZHZMGtCtA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_sJRnEyCfEfCGrZHZMGtCtA" name="salesprocessimpl" type="_oYINgCCbEfCGrZHZMGtCtA" association="_sJHPACCfEfCGrZHZMGtCtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_tkg2ACCfEfCGrZHZMGtCtA" memberEnd="_tkiEIiCfEfCGrZHZMGtCtA _tkirMCCfEfCGrZHZMGtCtA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_tkiEICCfEfCGrZHZMGtCtA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_tkiEISCfEfCGrZHZMGtCtA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_tkirMCCfEfCGrZHZMGtCtA" name="salesprocessimpl" type="_xsRSYCCbEfCGrZHZMGtCtA" association="_tkg2ACCfEfCGrZHZMGtCtA"/>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_ufk0QCCYEfCGrZHZMGtCtA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ufwacCCYEfCGrZHZMGtCtA" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ufwacSCYEfCGrZHZMGtCtA" key="Version" value="0.0.4"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ufwaciCYEfCGrZHZMGtCtA" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ufwacyCYEfCGrZHZMGtCtA" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ufwadCCYEfCGrZHZMGtCtA" key="Date" value="2024-10-21"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ufwadSCYEfCGrZHZMGtCtA" key="Author" value=""/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ufrh8CCYEfCGrZHZMGtCtA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://model/uml-vm-profile/uml-vm-profile.profile.uml#_-5XC0I-gEe-JbtsgPnxLSg"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://model/uml-vm-profile/uml-vm-profile.profile.uml#_XI61gJkHEeyPP7xacetQkQ"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_ilbZoCCcEfCGrZHZMGtCtA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ilcnwCCcEfCGrZHZMGtCtA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+    </profileApplication>
+  </uml:Model>
+  <umlvmprofile:vm xmi:id="_DvdSYCCZEfCGrZHZMGtCtA" base_Package="_zxn8sCCYEfCGrZHZMGtCtA"/>
+  <umlvmprofile:module xmi:id="_lN70UCCZEfCGrZHZMGtCtA" base_Package="_jAtHwCCZEfCGrZHZMGtCtA"/>
+  <umlvmprofile:delta xmi:id="_mXOXoCCZEfCGrZHZMGtCtA" base_Package="_jMhWMCCZEfCGrZHZMGtCtA"/>
+  <umlvmprofile:delta xmi:id="_yKbf8CCZEfCGrZHZMGtCtA" base_Package="_tofl0CCZEfCGrZHZMGtCtA"/>
+  <umlvmprofile:modifiedClass xmi:id="_raX2gCCbEfCGrZHZMGtCtA" base_Class="_oYINgCCbEfCGrZHZMGtCtA"/>
+  <umlvmprofile:modifiedClass xmi:id="_zUvFACCbEfCGrZHZMGtCtA" base_Class="_xsRSYCCbEfCGrZHZMGtCtA"/>
+  <umlvmprofile:adds xmi:id="_1Nfg8CCcEfCGrZHZMGtCtA" base_Property="_wtaoACCcEfCGrZHZMGtCtA"/>
+  <umlvmprofile:adds xmi:id="_58j4ICCcEfCGrZHZMGtCtA" base_Property="_3BQkoCCcEfCGrZHZMGtCtA"/>
+  <umlvmprofile:adds xmi:id="_iPZ0YCCeEfCGrZHZMGtCtA" base_Property="_ha9fsCCeEfCGrZHZMGtCtA"/>
+  <umlvmprofile:adds xmi:id="_cu15YCCfEfCGrZHZMGtCtA" base_Operation="_SBOgICCfEfCGrZHZMGtCtA"/>
+  <umlvmprofile:adds xmi:id="_dbiAQCCfEfCGrZHZMGtCtA" base_Operation="_SY6AUCCfEfCGrZHZMGtCtA"/>
+  <umlvmprofile:adds xmi:id="_hYvcsCCfEfCGrZHZMGtCtA" base_Operation="_gDtjcCCfEfCGrZHZMGtCtA"/>
+  <umlvmprofile:modifies xmi:id="_jcHpsCCfEfCGrZHZMGtCtA" base_Operation="_iOvQkCCfEfCGrZHZMGtCtA"/>
+  <umlvmprofile:modifies xmi:id="_DHQlwCCgEfCGrZHZMGtCtA" base_Association="_sJHPACCfEfCGrZHZMGtCtA"/>
+  <umlvmprofile:modifies xmi:id="_FZgVMCCgEfCGrZHZMGtCtA" base_Association="_tkg2ACCfEfCGrZHZMGtCtA"/>
+</xmi:XMI>
