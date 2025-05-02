@@ -94,9 +94,4 @@ public class BundlingResourceImpl extends BundlingResourceComponent{
 	protected void purchase() {
 		// TODO: implement this method
 	}
-
-	
-	public void refund() {
-		// TODO: implement this method
-	}
 }

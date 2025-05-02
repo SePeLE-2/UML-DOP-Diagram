@@ -18,6 +18,4 @@ public abstract class BundlingResourceComponent implements BundlingResource{
     public abstract List<HashMap<String,Object>> deleteBundling(VMJExchange vmjExchange);
 
 	protected abstract void purchase();
-
-	public abstract void refund();
 }

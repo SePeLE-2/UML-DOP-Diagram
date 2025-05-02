@@ -94,9 +94,4 @@ public class TicketResourceImpl extends TicketResourceComponent{
 	public void purchase() {
 		// TODO: implement this method
 	}
-
-	
-	public void refund() {
-		// TODO: implement this method
-	}
 }

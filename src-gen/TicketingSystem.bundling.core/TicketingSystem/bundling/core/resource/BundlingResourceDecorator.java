@@ -42,8 +42,4 @@ public abstract class BundlingResourceDecorator extends BundlingResourceComponen
 	protected void purchase() {
 		return record.purchase();
 	}
-
-	public void refund() {
-		return record.refund();
-	}
 }

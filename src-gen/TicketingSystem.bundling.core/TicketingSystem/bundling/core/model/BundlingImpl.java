@@ -19,22 +19,18 @@ import javax.persistence.OneToMany;
 @Table(name="bundling_impl")
 public class BundlingImpl extends BundlingComponent {
 
-	public BundlingImpl(int id, String bundlingName, int price, String expiryDate, String purchaseDate, int availability, TicketImpl ticketimpl) {
+	public BundlingImpl(int id, String bundlingName, int price, int availability, TicketImpl ticketimpl) {
 		this.id = id;
 		this.bundlingName = bundlingName;
 		this.price = price;
-		this.expiryDate = expiryDate;
-		this.purchaseDate = purchaseDate;
 		this.availability = availability;
 		this.ticketimpl = ticketimpl;
 	}
 
-	public BundlingImpl(String bundlingName, int price, String expiryDate, String purchaseDate, int availability, TicketImpl ticketimpl) {
+	public BundlingImpl(String bundlingName, int price, int availability, TicketImpl ticketimpl) {
 		this.id =  id.randomUUID();;
 		this.bundlingName = bundlingName;
 		this.price = price;
-		this.expiryDate = expiryDate;
-		this.purchaseDate = purchaseDate;
 		this.availability = availability;
 		this.ticketimpl = ticketimpl;
 	}
@@ -62,20 +58,6 @@ public class BundlingImpl extends BundlingComponent {
 	public void setPrice(int price) {
 		this.price = price;
 	}
-	public String getExpiryDate() {
-		return this.expiryDate;
-	}
-
-	public void setExpiryDate(String expiryDate) {
-		this.expiryDate = expiryDate;
-	}
-	public String getPurchaseDate() {
-		return this.purchaseDate;
-	}
-
-	public void setPurchaseDate(String purchaseDate) {
-		this.purchaseDate = purchaseDate;
-	}
 	public int getAvailability() {
 		return this.availability;
 	}
@@ -87,18 +69,12 @@ public class BundlingImpl extends BundlingComponent {
 	protected void purchase() {
 		// TODO: implement this method
 	}
-
-	public void refund() {
-		// TODO: implement this method
-	}
 	
 	public HashMap<String, Object> toHashMap() {
         HashMap<String, Object> bundlingMap = new HashMap<String,Object>();
 		bundlingMap.put("id",getId());
 		bundlingMap.put("bundlingName",getBundlingName());
 		bundlingMap.put("price",getPrice());
-		bundlingMap.put("expiryDate",getExpiryDate());
-		bundlingMap.put("purchaseDate",getPurchaseDate());
 		bundlingMap.put("availability",getAvailability());
 		bundlingMap.put("ticketimpl",getTicketimpl());
 

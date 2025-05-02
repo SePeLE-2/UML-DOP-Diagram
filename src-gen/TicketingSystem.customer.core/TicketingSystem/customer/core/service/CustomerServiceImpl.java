@@ -46,8 +46,6 @@ public class CustomerServiceImpl extends CustomerServiceComponent{
 		, email
 		, phoneNumber
 		, paymentimpl
-		, bundlingimpl
-		, ticketimpl
 		);
 		Repository.saveObject(customer);
 		return customer;
@@ -61,7 +59,7 @@ public class CustomerServiceImpl extends CustomerServiceComponent{
 		
 		//to do: fix association attributes
 		
-		Customer customer = CustomerFactory.createCustomer("TicketingSystem.customer.core.CustomerImpl", firstName, lastName, email, phoneNumber, paymentimpl, bundlingimpl, ticketimpl);
+		Customer customer = CustomerFactory.createCustomer("TicketingSystem.customer.core.CustomerImpl", firstName, lastName, email, phoneNumber, paymentimpl);
 		return customer;
 	}
 

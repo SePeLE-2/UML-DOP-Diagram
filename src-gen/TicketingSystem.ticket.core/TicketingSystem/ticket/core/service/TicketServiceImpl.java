@@ -36,8 +36,6 @@ public class TicketServiceImpl extends TicketServiceComponent{
 		String ticketName = (String) requestBody.get("ticketName");
 		String priceStr = (String) requestBody.get("price");
 		int price = Integer.parseInt(priceStr);
-		String expiryDate = (String) requestBody.get("expiryDate");
-		String purchaseDate = (String) requestBody.get("purchaseDate");
 		String availabilityStr = (String) requestBody.get("availability");
 		int availability = Integer.parseInt(availabilityStr);
 		
@@ -48,8 +46,6 @@ public class TicketServiceImpl extends TicketServiceComponent{
 		, eventName
 		, ticketName
 		, price
-		, expiryDate
-		, purchaseDate
 		, availability
 		);
 		Repository.saveObject(ticket);
@@ -61,14 +57,12 @@ public class TicketServiceImpl extends TicketServiceComponent{
 		String ticketName = (String) vmjExchange.getRequestBodyForm("ticketName");
 		String priceStr = (String) vmjExchange.getRequestBodyForm("price");
 		int price = Integer.parseInt(priceStr);
-		String expiryDate = (String) vmjExchange.getRequestBodyForm("expiryDate");
-		String purchaseDate = (String) vmjExchange.getRequestBodyForm("purchaseDate");
 		String availabilityStr = (String) vmjExchange.getRequestBodyForm("availability");
 		int availability = Integer.parseInt(availabilityStr);
 		
 		//to do: fix association attributes
 		
-		Ticket ticket = TicketFactory.createTicket("TicketingSystem.ticket.core.TicketImpl", eventName, ticketName, price, expiryDate, purchaseDate, availability);
+		Ticket ticket = TicketFactory.createTicket("TicketingSystem.ticket.core.TicketImpl", eventName, ticketName, price, availability);
 		return ticket;
 	}
 
@@ -81,8 +75,6 @@ public class TicketServiceImpl extends TicketServiceComponent{
 		ticket.setTicketName((String) requestBody.get("ticketName"));
 		String priceStr = (String) requestBody.get("price");
 		ticket.setPrice(Integer.parseInt(priceStr));
-		ticket.setExpiryDate((String) requestBody.get("expiryDate"));
-		ticket.setPurchaseDate((String) requestBody.get("purchaseDate"));
 		String availabilityStr = (String) requestBody.get("availability");
 		ticket.setAvailability(Integer.parseInt(availabilityStr));
 		
@@ -135,10 +127,6 @@ public class TicketServiceImpl extends TicketServiceComponent{
 	}
 
 	public void purchase() {
-		// TODO: implement this method
-	}
-
-	public void refund() {
 		// TODO: implement this method
 	}
 }

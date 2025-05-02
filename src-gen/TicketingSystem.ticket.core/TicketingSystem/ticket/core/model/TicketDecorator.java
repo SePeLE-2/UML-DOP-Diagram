@@ -61,18 +61,6 @@ public abstract class TicketDecorator extends TicketComponent{
 	public void setPrice(int price) {
 		record.setPrice(price);
 	}
-	public String getExpiryDate() {
-		return record.getExpiryDate();
-	}
-	public void setExpiryDate(String expiryDate) {
-		record.setExpiryDate(expiryDate);
-	}
-	public String getPurchaseDate() {
-		return record.getPurchaseDate();
-	}
-	public void setPurchaseDate(String purchaseDate) {
-		record.setPurchaseDate(purchaseDate);
-	}
 	public int getAvailability() {
 		return record.getAvailability();
 	}
@@ -82,10 +70,6 @@ public abstract class TicketDecorator extends TicketComponent{
 
 	public void purchase() {
 		return record.purchase();
-	}
-
-	public void refund() {
-		return record.refund();
 	}
 
 	public HashMap<String, Object> toHashMap() {

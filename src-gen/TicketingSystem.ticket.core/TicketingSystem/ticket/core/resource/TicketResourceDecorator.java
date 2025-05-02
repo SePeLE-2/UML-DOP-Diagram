@@ -42,8 +42,4 @@ public abstract class TicketResourceDecorator extends TicketResourceComponent{
 	public void purchase() {
 		return record.purchase();
 	}
-
-	public void refund() {
-		return record.refund();
-	}
 }

@@ -23,6 +23,4 @@ public abstract class BundlingServiceComponent implements BundlingService{
 	public abstract HashMap<String, Object> getBundlingById(int id);
 
 	protected abstract void purchase();
-
-	public abstract void refund();
 }

@@ -19,23 +19,19 @@ import javax.persistence.OneToMany;
 @Table(name="ticket_impl")
 public class TicketImpl extends TicketComponent {
 
-	public TicketImpl(int id, String eventName, String ticketName, int price, String expiryDate, String purchaseDate, int availability) {
+	public TicketImpl(int id, String eventName, String ticketName, int price, int availability) {
 		this.id = id;
 		this.eventName = eventName;
 		this.ticketName = ticketName;
 		this.price = price;
-		this.expiryDate = expiryDate;
-		this.purchaseDate = purchaseDate;
 		this.availability = availability;
 	}
 
-	public TicketImpl(String eventName, String ticketName, int price, String expiryDate, String purchaseDate, int availability) {
+	public TicketImpl(String eventName, String ticketName, int price, int availability) {
 		this.id =  id.randomUUID();;
 		this.eventName = eventName;
 		this.ticketName = ticketName;
 		this.price = price;
-		this.expiryDate = expiryDate;
-		this.purchaseDate = purchaseDate;
 		this.availability = availability;
 	}
 
@@ -69,20 +65,6 @@ public class TicketImpl extends TicketComponent {
 	public void setPrice(int price) {
 		this.price = price;
 	}
-	public String getExpiryDate() {
-		return this.expiryDate;
-	}
-
-	public void setExpiryDate(String expiryDate) {
-		this.expiryDate = expiryDate;
-	}
-	public String getPurchaseDate() {
-		return this.purchaseDate;
-	}
-
-	public void setPurchaseDate(String purchaseDate) {
-		this.purchaseDate = purchaseDate;
-	}
 	public int getAvailability() {
 		return this.availability;
 	}
@@ -94,10 +76,6 @@ public class TicketImpl extends TicketComponent {
 	public void purchase() {
 		// TODO: implement this method
 	}
-
-	public void refund() {
-		// TODO: implement this method
-	}
 	
 	public HashMap<String, Object> toHashMap() {
         HashMap<String, Object> ticketMap = new HashMap<String,Object>();
@@ -105,8 +83,6 @@ public class TicketImpl extends TicketComponent {
 		ticketMap.put("eventName",getEventName());
 		ticketMap.put("ticketName",getTicketName());
 		ticketMap.put("price",getPrice());
-		ticketMap.put("expiryDate",getExpiryDate());
-		ticketMap.put("purchaseDate",getPurchaseDate());
 		ticketMap.put("availability",getAvailability());
 
         return ticketMap;

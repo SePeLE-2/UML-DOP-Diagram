@@ -19,8 +19,6 @@ public abstract class TicketComponent implements Ticket{
 	protected String eventName;
 	protected String ticketName;
 	protected int price;
-	protected String expiryDate;
-	protected String purchaseDate;
 	protected int availability;
 	protected String objectName = TicketComponent.class.getName();
 
@@ -29,14 +27,12 @@ public abstract class TicketComponent implements Ticket{
 	} 
 
 	public TicketComponent(
-        int id, String eventName, String ticketName, int price, String expiryDate, String purchaseDate, int availability
+        int id, String eventName, String ticketName, int price, int availability
     ) {
         this.id = id;
         this.eventName = eventName;
         this.ticketName = ticketName;
         this.price = price;
-        this.expiryDate = expiryDate;
-        this.purchaseDate = purchaseDate;
         this.availability = availability;
     }
 
@@ -68,20 +64,6 @@ public abstract class TicketComponent implements Ticket{
 	public void setPrice(int price) {
 		this.price = price;
 	}
-	public String getExpiryDate() {
-		return this.expiryDate;
-	}
-
-	public void setExpiryDate(String expiryDate) {
-		this.expiryDate = expiryDate;
-	}
-	public String getPurchaseDate() {
-		return this.purchaseDate;
-	}
-
-	public void setPurchaseDate(String purchaseDate) {
-		this.purchaseDate = purchaseDate;
-	}
 	public int getAvailability() {
 		return this.availability;
 	}
@@ -92,8 +74,6 @@ public abstract class TicketComponent implements Ticket{
  
 	public abstract void purchase();
 
-	public abstract void refund();
-
 	@Override
     public String toString() {
         return "{" +
@@ -101,8 +81,6 @@ public abstract class TicketComponent implements Ticket{
             " eventName='" + getEventName() + "'" +
             " ticketName='" + getTicketName() + "'" +
             " price='" + getPrice() + "'" +
-            " expiryDate='" + getExpiryDate() + "'" +
-            " purchaseDate='" + getPurchaseDate() + "'" +
             " availability='" + getAvailability() + "'" +
             "}";
     }

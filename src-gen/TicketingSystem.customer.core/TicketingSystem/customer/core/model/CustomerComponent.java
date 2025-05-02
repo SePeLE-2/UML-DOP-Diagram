@@ -22,10 +22,6 @@ public abstract class CustomerComponent implements Customer{
 	protected String phoneNumber;
 	@ManyToOne(targetEntity=TicketingSystem.payment.core.PaymentComponent.class)
 	public Payment paymentimpl;
-	@ManyToOne(targetEntity=TicketingSystem..core.Component.class)
-	public  bundlingimpl;
-	@ManyToOne(targetEntity=TicketingSystem..core.Component.class)
-	public  ticketimpl;
 	protected String objectName = CustomerComponent.class.getName();
 
 	public CustomerComponent() {
@@ -33,7 +29,7 @@ public abstract class CustomerComponent implements Customer{
 	} 
 
 	public CustomerComponent(
-        int id, String firstName, String lastName, String email, String phoneNumber, PaymentImpl paymentimpl, BundlingImpl bundlingimpl, TicketImpl ticketimpl
+        int id, String firstName, String lastName, String email, String phoneNumber, PaymentImpl paymentimpl
     ) {
         this.id = id;
         this.firstName = firstName;
@@ -41,8 +37,6 @@ public abstract class CustomerComponent implements Customer{
         this.email = email;
         this.phoneNumber = phoneNumber;
         this.paymentimpl = paymentimpl;
-        this.bundlingimpl = bundlingimpl;
-        this.ticketimpl = ticketimpl;
     }
 
 	public int getId() {
@@ -83,12 +77,6 @@ public abstract class CustomerComponent implements Customer{
 	public abstract PaymentImpl getPaymentimpl();
 	public abstract void setPaymentimpl(PaymentImpl paymentimpl);
 	
-	public abstract BundlingImpl getBundlingimpl();
-	public abstract void setBundlingimpl(BundlingImpl bundlingimpl);
-	
-	public abstract TicketImpl getTicketimpl();
-	public abstract void setTicketimpl(TicketImpl ticketimpl);
-	
  
 
 	@Override
@@ -100,8 +88,6 @@ public abstract class CustomerComponent implements Customer{
             " email='" + getEmail() + "'" +
             " phoneNumber='" + getPhoneNumber() + "'" +
             " paymentimpl='" + getPaymentimpl() + "'" +
-            " bundlingimpl='" + getBundlingimpl() + "'" +
-            " ticketimpl='" + getTicketimpl() + "'" +
             "}";
     }
 	

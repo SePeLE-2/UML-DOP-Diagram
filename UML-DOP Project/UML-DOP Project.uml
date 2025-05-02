@@ -83,17 +83,10 @@
           <ownedAttribute xmi:type="uml:Property" xmi:id="_n6pdECGoEfCn7tu5Ovjl-w" name="price" visibility="protected">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_oDWtICGoEfCn7tu5Ovjl-w" name="expiryDate" visibility="protected">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_oNI7QCGoEfCn7tu5Ovjl-w" name="purchaseDate" visibility="protected">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_oYtSECGoEfCn7tu5Ovjl-w" name="availability" visibility="protected">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
           </ownedAttribute>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_idNkACGoEfCn7tu5Ovjl-w" name="purchase"/>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_i0YG0CGoEfCn7tu5Ovjl-w" name="refund"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Realization" xmi:id="_h1QEwCGrEfCn7tu5Ovjl-w" client="_d6EI8CGoEfCn7tu5Ovjl-w" supplier="_cISCQCGoEfCn7tu5Ovjl-w"/>
       </packagedElement>
@@ -109,21 +102,14 @@
           <ownedAttribute xmi:type="uml:Property" xmi:id="_PZyrgCGqEfCn7tu5Ovjl-w" name="price" visibility="protected">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
           </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_Pm3eMCGqEfCn7tu5Ovjl-w" name="expiryDate" visibility="protected">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_PzwDoCGqEfCn7tu5Ovjl-w" name="purchaseDate" visibility="protected">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_QAOZYCGqEfCn7tu5Ovjl-w" name="availability" visibility="protected">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
           </ownedAttribute>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_Plpj8iGvEfCn7tu5Ovjl-w" name="ticketimpl" type="_d6EI8CGoEfCn7tu5Ovjl-w" association="_Plo84CGvEfCn7tu5Ovjl-w">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PlqLACGvEfCn7tu5Ovjl-w"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PlqLASGvEfCn7tu5Ovjl-w" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cv0DQCcBEfCnRpt0LfwOLA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cwRWQCcBEfCnRpt0LfwOLA" value="*"/>
           </ownedAttribute>
           <ownedOperation xmi:type="uml:Operation" xmi:id="_fbMSkCGqEfCn7tu5Ovjl-w" name="purchase" visibility="protected"/>
-          <ownedOperation xmi:type="uml:Operation" xmi:id="_fxZzICGqEfCn7tu5Ovjl-w" name="refund"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Realization" xmi:id="_hTs24CGrEfCn7tu5Ovjl-w" client="_z_xmYCGpEfCn7tu5Ovjl-w" supplier="_x_tMECGpEfCn7tu5Ovjl-w"/>
       </packagedElement>
@@ -417,10 +403,7 @@
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Plpj8CGvEfCn7tu5Ovjl-w" source="org.eclipse.papyrus">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Plpj8SGvEfCn7tu5Ovjl-w" key="nature" value="UML_Nature"/>
       </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_PlqLAiGvEfCn7tu5Ovjl-w" name="bundlingimpl" type="_z_xmYCGpEfCn7tu5Ovjl-w" association="_Plo84CGvEfCn7tu5Ovjl-w">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AlhO0CG-EfCn7tu5Ovjl-w"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AnxRkCG-EfCn7tu5Ovjl-w" value="*"/>
-      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_PlqLAiGvEfCn7tu5Ovjl-w" name="bundlingimpl" type="_z_xmYCGpEfCn7tu5Ovjl-w" association="_Plo84CGvEfCn7tu5Ovjl-w"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_baqqICGvEfCn7tu5Ovjl-w" memberEnd="_basfUCGvEfCn7tu5Ovjl-w _basfUyGvEfCn7tu5Ovjl-w">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_barRMCGvEfCn7tu5Ovjl-w" source="org.eclipse.papyrus">

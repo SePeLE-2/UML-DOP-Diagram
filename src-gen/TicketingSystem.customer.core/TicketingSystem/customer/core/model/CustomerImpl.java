@@ -19,26 +19,22 @@ import javax.persistence.OneToMany;
 @Table(name="customer_impl")
 public class CustomerImpl extends CustomerComponent {
 
-	public CustomerImpl(int id, String firstName, String lastName, String email, String phoneNumber, PaymentImpl paymentimpl, BundlingImpl bundlingimpl, TicketImpl ticketimpl) {
+	public CustomerImpl(int id, String firstName, String lastName, String email, String phoneNumber, PaymentImpl paymentimpl) {
 		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.email = email;
 		this.phoneNumber = phoneNumber;
 		this.paymentimpl = paymentimpl;
-		this.bundlingimpl = bundlingimpl;
-		this.ticketimpl = ticketimpl;
 	}
 
-	public CustomerImpl(String firstName, String lastName, String email, String phoneNumber, PaymentImpl paymentimpl, BundlingImpl bundlingimpl, TicketImpl ticketimpl) {
+	public CustomerImpl(String firstName, String lastName, String email, String phoneNumber, PaymentImpl paymentimpl) {
 		this.id =  id.randomUUID();;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.email = email;
 		this.phoneNumber = phoneNumber;
 		this.paymentimpl = paymentimpl;
-		this.bundlingimpl = bundlingimpl;
-		this.ticketimpl = ticketimpl;
 	}
 
 	public CustomerImpl() { }
@@ -88,8 +84,6 @@ public class CustomerImpl extends CustomerComponent {
 		customerMap.put("email",getEmail());
 		customerMap.put("phoneNumber",getPhoneNumber());
 		customerMap.put("paymentimpl",getPaymentimpl());
-		customerMap.put("bundlingimpl",getBundlingimpl());
-		customerMap.put("ticketimpl",getTicketimpl());
 
         return customerMap;
     }

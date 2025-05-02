@@ -10,7 +10,7 @@ public interface Payment {
 	public void setBundlingimpl(BundlingImpl bundlingimpl);
 	public TicketImpl getTicketimpl();
 	public void setTicketimpl(TicketImpl ticketimpl);
-	org.eclipse.uml2.uml.internal.impl.ClassImpl@48c37240 (name: PaymentImpl, visibility: <unset>) (isLeaf: false, isAbstract: false, isFinalSpecialization: false) (isActive: false)
+	org.eclipse.uml2.uml.internal.impl.ClassImpl@590c6138 (name: PaymentImpl, visibility: <unset>) (isLeaf: false, isAbstract: false, isFinalSpecialization: false) (isActive: false)
 	public void pay();
 	HashMap<String, Object> toHashMap();
 }

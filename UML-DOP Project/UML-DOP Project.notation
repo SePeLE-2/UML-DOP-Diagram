@@ -326,14 +326,6 @@
                 <element xmi:type="uml:Property" href="UML-DOP%20Project.uml#_n6pdECGoEfCn7tu5Ovjl-w"/>
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_n7nGYSGoEfCn7tu5Ovjl-w"/>
               </children>
-              <children xmi:type="notation:Shape" xmi:id="_oELzkCGoEfCn7tu5Ovjl-w" type="Property_ClassAttributeLabel">
-                <element xmi:type="uml:Property" href="UML-DOP%20Project.uml#_oDWtICGoEfCn7tu5Ovjl-w"/>
-                <layoutConstraint xmi:type="notation:Location" xmi:id="_oELzkSGoEfCn7tu5Ovjl-w"/>
-              </children>
-              <children xmi:type="notation:Shape" xmi:id="_oN7lcCGoEfCn7tu5Ovjl-w" type="Property_ClassAttributeLabel">
-                <element xmi:type="uml:Property" href="UML-DOP%20Project.uml#_oNI7QCGoEfCn7tu5Ovjl-w"/>
-                <layoutConstraint xmi:type="notation:Location" xmi:id="_oN7lcSGoEfCn7tu5Ovjl-w"/>
-              </children>
               <children xmi:type="notation:Shape" xmi:id="_oZZ1oCGoEfCn7tu5Ovjl-w" type="Property_ClassAttributeLabel">
                 <element xmi:type="uml:Property" href="UML-DOP%20Project.uml#_oYtSECGoEfCn7tu5Ovjl-w"/>
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_oZZ1oSGoEfCn7tu5Ovjl-w"/>
@@ -347,10 +339,6 @@
               <children xmi:type="notation:Shape" xmi:id="_id_nICGoEfCn7tu5Ovjl-w" type="Operation_ClassOperationLabel">
                 <element xmi:type="uml:Operation" href="UML-DOP%20Project.uml#_idNkACGoEfCn7tu5Ovjl-w"/>
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_id_nISGoEfCn7tu5Ovjl-w"/>
-              </children>
-              <children xmi:type="notation:Shape" xmi:id="_i1Ss0CGoEfCn7tu5Ovjl-w" type="Operation_ClassOperationLabel">
-                <element xmi:type="uml:Operation" href="UML-DOP%20Project.uml#_i0YG0CGoEfCn7tu5Ovjl-w"/>
-                <layoutConstraint xmi:type="notation:Location" xmi:id="_i1Ss0SGoEfCn7tu5Ovjl-w"/>
               </children>
               <styles xmi:type="notation:TitleStyle" xmi:id="_d6x6qyGoEfCn7tu5Ovjl-w"/>
               <styles xmi:type="notation:SortingStyle" xmi:id="_d6x6rCGoEfCn7tu5Ovjl-w"/>
@@ -419,14 +407,6 @@
                 <element xmi:type="uml:Property" href="UML-DOP%20Project.uml#_PZyrgCGqEfCn7tu5Ovjl-w"/>
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_PbCBoSGqEfCn7tu5Ovjl-w"/>
               </children>
-              <children xmi:type="notation:Shape" xmi:id="_Pnw2ECGqEfCn7tu5Ovjl-w" type="Property_ClassAttributeLabel">
-                <element xmi:type="uml:Property" href="UML-DOP%20Project.uml#_Pm3eMCGqEfCn7tu5Ovjl-w"/>
-                <layoutConstraint xmi:type="notation:Location" xmi:id="_Pnw2ESGqEfCn7tu5Ovjl-w"/>
-              </children>
-              <children xmi:type="notation:Shape" xmi:id="_P0qCkCGqEfCn7tu5Ovjl-w" type="Property_ClassAttributeLabel">
-                <element xmi:type="uml:Property" href="UML-DOP%20Project.uml#_PzwDoCGqEfCn7tu5Ovjl-w"/>
-                <layoutConstraint xmi:type="notation:Location" xmi:id="_P0qCkSGqEfCn7tu5Ovjl-w"/>
-              </children>
               <children xmi:type="notation:Shape" xmi:id="_QBEG4CGqEfCn7tu5Ovjl-w" type="Property_ClassAttributeLabel">
                 <element xmi:type="uml:Property" href="UML-DOP%20Project.uml#_QAOZYCGqEfCn7tu5Ovjl-w"/>
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_QBEG4SGqEfCn7tu5Ovjl-w"/>
@@ -440,10 +420,6 @@
               <children xmi:type="notation:Shape" xmi:id="_fcAx8CGqEfCn7tu5Ovjl-w" type="Operation_ClassOperationLabel">
                 <element xmi:type="uml:Operation" href="UML-DOP%20Project.uml#_fbMSkCGqEfCn7tu5Ovjl-w"/>
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_fcAx8SGqEfCn7tu5Ovjl-w"/>
-              </children>
-              <children xmi:type="notation:Shape" xmi:id="_fyQuwCGqEfCn7tu5Ovjl-w" type="Operation_ClassOperationLabel">
-                <element xmi:type="uml:Operation" href="UML-DOP%20Project.uml#_fxZzICGqEfCn7tu5Ovjl-w"/>
-                <layoutConstraint xmi:type="notation:Location" xmi:id="_fyQuwSGqEfCn7tu5Ovjl-w"/>
               </children>
               <styles xmi:type="notation:TitleStyle" xmi:id="_0Ak3qyGpEfCn7tu5Ovjl-w"/>
               <styles xmi:type="notation:SortingStyle" xmi:id="_0Ak3rCGpEfCn7tu5Ovjl-w"/>
@@ -463,7 +439,7 @@
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uRnwwyGpEfCn7tu5Ovjl-w"/>
         </children>
         <element xmi:type="uml:Package" href="UML-DOP%20Project.uml#_uQ1toCGpEfCn7tu5Ovjl-w"/>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uRnJsSGpEfCn7tu5Ovjl-w" x="374" y="27" width="321"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uRnJsSGpEfCn7tu5Ovjl-w" x="434" y="17" width="321"/>
       </children>
       <children xmi:type="notation:Shape" xmi:id="_rbFMACGqEfCn7tu5Ovjl-w" type="Package_Shape_CN">
         <children xmi:type="notation:DecorationNode" xmi:id="_rbFzECGqEfCn7tu5Ovjl-w" type="Package_NameLabel_CN"/>
@@ -1892,7 +1868,7 @@
     </children>
     <styles xmi:type="notation:FontStyle" xmi:id="_hUoD8SGrEfCn7tu5Ovjl-w"/>
     <element xmi:type="uml:Realization" href="UML-DOP%20Project.uml#_hTs24CGrEfCn7tu5Ovjl-w"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_hUoD8iGrEfCn7tu5Ovjl-w" points="[1065, 350, -643984, -643984]$[1065, 323, -643984, -643984]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_hUoD8iGrEfCn7tu5Ovjl-w" points="[1125, 340, -643984, -643984]$[1125, 313, -643984, -643984]"/>
     <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hWgTQCGrEfCn7tu5Ovjl-w" id="(0.1606425702811245,0.0)"/>
     <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hWgTQSGrEfCn7tu5Ovjl-w" id="(0.39603960396039606,1.0)"/>
   </edges>

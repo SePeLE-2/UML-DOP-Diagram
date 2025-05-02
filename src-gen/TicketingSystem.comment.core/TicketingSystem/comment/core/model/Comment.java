@@ -16,6 +16,6 @@ public interface Comment {
 	public void setCustomerimpl(CustomerImpl customerimpl);
 	public ArticleImpl getArticleimpl();
 	public void setArticleimpl(ArticleImpl articleimpl);
-	org.eclipse.uml2.uml.internal.impl.ClassImpl@49d9fcf9 (name: CommentImpl, visibility: <unset>) (isLeaf: false, isAbstract: false, isFinalSpecialization: false) (isActive: false)
+	org.eclipse.uml2.uml.internal.impl.ClassImpl@61711fd7 (name: CommentImpl, visibility: <unset>) (isLeaf: false, isAbstract: false, isFinalSpecialization: false) (isActive: false)
 	HashMap<String, Object> toHashMap();
 }

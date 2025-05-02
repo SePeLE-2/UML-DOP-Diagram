@@ -18,8 +18,6 @@ public abstract class BundlingComponent implements Bundling{
 	protected int id; 
 	protected String bundlingName;
 	protected int price;
-	protected String expiryDate;
-	protected String purchaseDate;
 	protected int availability;
 	@ManyToOne(targetEntity=TicketingSystem..core.Component.class)
 	public  ticketimpl;
@@ -30,13 +28,11 @@ public abstract class BundlingComponent implements Bundling{
 	} 
 
 	public BundlingComponent(
-        int id, String bundlingName, int price, String expiryDate, String purchaseDate, int availability, TicketImpl ticketimpl
+        int id, String bundlingName, int price, int availability, TicketImpl ticketimpl
     ) {
         this.id = id;
         this.bundlingName = bundlingName;
         this.price = price;
-        this.expiryDate = expiryDate;
-        this.purchaseDate = purchaseDate;
         this.availability = availability;
         this.ticketimpl = ticketimpl;
     }
@@ -62,20 +58,6 @@ public abstract class BundlingComponent implements Bundling{
 	public void setPrice(int price) {
 		this.price = price;
 	}
-	public String getExpiryDate() {
-		return this.expiryDate;
-	}
-
-	public void setExpiryDate(String expiryDate) {
-		this.expiryDate = expiryDate;
-	}
-	public String getPurchaseDate() {
-		return this.purchaseDate;
-	}
-
-	public void setPurchaseDate(String purchaseDate) {
-		this.purchaseDate = purchaseDate;
-	}
 	public int getAvailability() {
 		return this.availability;
 	}
@@ -89,16 +71,12 @@ public abstract class BundlingComponent implements Bundling{
  
 	protected abstract void purchase();
 
-	public abstract void refund();
-
 	@Override
     public String toString() {
         return "{" +
             " id='" + getId() + "'" +
             " bundlingName='" + getBundlingName() + "'" +
             " price='" + getPrice() + "'" +
-            " expiryDate='" + getExpiryDate() + "'" +
-            " purchaseDate='" + getPurchaseDate() + "'" +
             " availability='" + getAvailability() + "'" +
             " ticketimpl='" + getTicketimpl() + "'" +
             "}";

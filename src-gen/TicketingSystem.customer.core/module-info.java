@@ -1,7 +1,5 @@
 module TicketingSystem.customer.core {
 	requires TicketingSystem.payment.core;
-	requires TicketingSystem.bundling.core;
-	requires TicketingSystem.ticket.core;
 	exports TicketingSystem.customer;
     exports TicketingSystem.customer.core;
 	requires vmj.routing.route;

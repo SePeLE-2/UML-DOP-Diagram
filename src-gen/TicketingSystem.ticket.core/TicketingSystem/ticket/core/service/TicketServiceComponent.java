@@ -23,6 +23,4 @@ public abstract class TicketServiceComponent implements TicketService{
 	public abstract HashMap<String, Object> getTicketById(int id);
 
 	public abstract void purchase();
-
-	public abstract void refund();
 }

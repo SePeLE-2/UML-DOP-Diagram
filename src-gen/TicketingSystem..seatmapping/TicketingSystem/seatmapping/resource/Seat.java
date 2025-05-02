@@ -31,7 +31,7 @@ public class Seat extends Seat{
 		
 		//to do: fix association attributes
 		
-		Seat seat = SeatFactory.createSeat("TicketingSystem.seatmapping.core.Seat", seatNumber, row, isOccupied, occupantId);
+		Seat seat = SeatFactory.createSeat("TicketingSystem.seatmapping.core.Seat", seatNumber, row, isOccupied, occupantId, customerimpl);
 			return seat;
 	}
 

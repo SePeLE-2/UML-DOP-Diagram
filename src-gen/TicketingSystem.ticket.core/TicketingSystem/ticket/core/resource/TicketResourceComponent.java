@@ -18,6 +18,4 @@ public abstract class TicketResourceComponent implements TicketResource{
     public abstract List<HashMap<String,Object>> deleteTicket(VMJExchange vmjExchange);
 
 	public abstract void purchase();
-
-	public abstract void refund();
 }

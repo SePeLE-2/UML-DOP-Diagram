@@ -35,8 +35,6 @@ public class BundlingServiceImpl extends BundlingServiceComponent{
 		String bundlingName = (String) requestBody.get("bundlingName");
 		String priceStr = (String) requestBody.get("price");
 		int price = Integer.parseInt(priceStr);
-		String expiryDate = (String) requestBody.get("expiryDate");
-		String purchaseDate = (String) requestBody.get("purchaseDate");
 		String availabilityStr = (String) requestBody.get("availability");
 		int availability = Integer.parseInt(availabilityStr);
 		
@@ -46,8 +44,6 @@ public class BundlingServiceImpl extends BundlingServiceComponent{
 		id
 		, bundlingName
 		, price
-		, expiryDate
-		, purchaseDate
 		, availability
 		, ticketimpl
 		);
@@ -59,14 +55,12 @@ public class BundlingServiceImpl extends BundlingServiceComponent{
 		String bundlingName = (String) vmjExchange.getRequestBodyForm("bundlingName");
 		String priceStr = (String) vmjExchange.getRequestBodyForm("price");
 		int price = Integer.parseInt(priceStr);
-		String expiryDate = (String) vmjExchange.getRequestBodyForm("expiryDate");
-		String purchaseDate = (String) vmjExchange.getRequestBodyForm("purchaseDate");
 		String availabilityStr = (String) vmjExchange.getRequestBodyForm("availability");
 		int availability = Integer.parseInt(availabilityStr);
 		
 		//to do: fix association attributes
 		
-		Bundling bundling = BundlingFactory.createBundling("TicketingSystem.bundling.core.BundlingImpl", bundlingName, price, expiryDate, purchaseDate, availability, ticketimpl);
+		Bundling bundling = BundlingFactory.createBundling("TicketingSystem.bundling.core.BundlingImpl", bundlingName, price, availability, ticketimpl);
 		return bundling;
 	}
 
@@ -78,8 +72,6 @@ public class BundlingServiceImpl extends BundlingServiceComponent{
 		bundling.setBundlingName((String) requestBody.get("bundlingName"));
 		String priceStr = (String) requestBody.get("price");
 		bundling.setPrice(Integer.parseInt(priceStr));
-		bundling.setExpiryDate((String) requestBody.get("expiryDate"));
-		bundling.setPurchaseDate((String) requestBody.get("purchaseDate"));
 		String availabilityStr = (String) requestBody.get("availability");
 		bundling.setAvailability(Integer.parseInt(availabilityStr));
 		
@@ -132,10 +124,6 @@ public class BundlingServiceImpl extends BundlingServiceComponent{
 	}
 
 	protected void purchase() {
-		// TODO: implement this method
-	}
-
-	public void refund() {
 		// TODO: implement this method
 	}
 }
