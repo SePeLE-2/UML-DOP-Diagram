@@ -344,7 +344,7 @@
           </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:Interface" xmi:id="_b4et4CG3EfCn7tu5Ovjl-w" name="Rating"/>
-        <packagedElement xmi:type="uml:Class" xmi:id="_fSpusCG3EfCn7tu5Ovjl-w" name="EventImpl">
+        <packagedElement xmi:type="uml:Class" xmi:id="_fSpusCG3EfCn7tu5Ovjl-w" name="EventImpl" visibility="private">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_QeN0kSG4EfCn7tu5Ovjl-w" name="eventimpl" type="_H_MhMCG1EfCn7tu5Ovjl-w" association="_QeMmcCG4EfCn7tu5Ovjl-w">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QeN0kiG4EfCn7tu5Ovjl-w"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QeOboCG4EfCn7tu5Ovjl-w" value="1"/>
@@ -611,4 +611,5 @@
   <umlvmprofile:modifies xmi:id="_VbtpUCG4EfCn7tu5Ovjl-w" base_Association="_QeMmcCG4EfCn7tu5Ovjl-w"/>
   <umlvmprofile:when xmi:id="_Wqw2YCG4EfCn7tu5Ovjl-w" base_Dependency="_LhElICG4EfCn7tu5Ovjl-w"/>
   <umlvmprofile:when xmi:id="_aEnHECG4EfCn7tu5Ovjl-w" base_Dependency="_Mfwa8CG4EfCn7tu5Ovjl-w"/>
+  <umlvmprofile:modifiedClass xmi:id="_A9W98Cr8EfCBUZmAFS9dTQ" base_Class="_fSpusCG3EfCn7tu5Ovjl-w"/>
 </xmi:XMI>
